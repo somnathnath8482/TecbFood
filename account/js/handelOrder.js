@@ -19,7 +19,7 @@ function createRazorpayOrder(name,number,price,address,note,items) {
         "currency": "INR",
         "name": "TECB food",
         "description": "Pay now",
-        "image": "logo.png",
+        "image": "logo.png",// add logo in base dimention 
         "handler": function (response){
             alert("TRANJACTION SUCCESS TRANJACTION ID IS :"+ response.razorpay_payment_id);
            /* window.location.replace("routers/order-router.php?uid="+response.razorpay_payment_id
